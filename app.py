@@ -21,6 +21,24 @@ def main():
         print("Phishing attacks are the most common type of cyber attack, where attackers")
         print("attempt to steal sensitive information by disguising as trustworthy entities.")
     
+    print("\nQuestion 2: Which of the following is the best password practice?")
+    print("a) Use the same password for all accounts to avoid forgetting them")
+    print("b) Use complex passwords and store them in a password manager")
+    print("c) Change your passwords every day")
+    print("d) Write down passwords on sticky notes for easy access")
+    
+    answer2 = input("\nYour answer (a/b/c/d): ").strip().lower()
+
+    if answer2 == 'b':
+        print("\nCorrect! Using a password manager with complex, unique passwords")
+        print("is the most secure approach to password management.")
+    
+    else:
+        print("\nIncorrect. The answer is (b) Use complex passwords and store them in a password manager.")
+        print("This approach allows you to have strong, unique passwords for each account")
+        print("without having to memorize them all.")
+
+
     # Ask if the user wants to learn more
     learn_more = input("\nWould you like to learn more about phishing prevention? (yes/no): ").strip().lower()
     
