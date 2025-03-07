@@ -26,10 +26,10 @@ python app.py
 Option 1: Build from source
 ```bash
 # Build the Docker image
-docker build -t icasl/security-quiz .
+docker build -t security-quiz .
 
 # Run the container interactively
-docker run -it icasl/security-quiz
+docker run -it security-quiz
 ```
 
 Option 2: Pull pre-built image from Docker Hub
@@ -45,12 +45,12 @@ Option 3: Use Docker image archive (.tar)
 For offline distribution or when Docker Hub access is limited:
 ```bash
 # For the distributor: Save image to a .tar file
-docker build -t icasl/security-quiz .
-docker save icasl/security-quiz > security-quiz.tar
+docker build -t security-quiz .
+docker save security-quiz > security-quiz.tar
 
 # For recipients: Load the image from the .tar file
 docker load < security-quiz.tar
-docker run -it icasl/security-quiz
+docker run -it security-quiz
 ```
 
 ### Pushing to Docker Hub
@@ -60,7 +60,7 @@ To make your image available to others via Docker Hub:
 docker login
 
 # Tag your image with your Docker Hub username
-docker tag icasl/security-quiz yourusername/security-quiz
+docker tag security-quiz yourusername/security-quiz
 
 # Push the image to Docker Hub
 docker push yourusername/security-quiz
