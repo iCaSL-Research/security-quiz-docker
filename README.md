@@ -35,10 +35,10 @@ docker run -it security-quiz
 Option 2: Pull pre-built image from Docker Hub
 ```bash
 # Pull the image (replace 'yourusername/repo' with your Docker Hub details)
-docker pull yourusername/security-quiz-docker
+docker pull aishamehvish/security-quiz
 
 # Run the container
-docker run -it organization/security-quiz-docker
+docker run -it aishamehvish/security-quiz
 ```
 
 Option 3: Use Docker image archive (.tar)
