@@ -27,6 +27,7 @@ def main():
     print("c) Change your passwords every day")
     print("d) Write down passwords on sticky notes for easy access")
     
+    # Question 2 
     answer2 = input("\nYour answer (a/b/c/d): ").strip().lower()
 
     if answer2 == 'b':
